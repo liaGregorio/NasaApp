@@ -1,4 +1,4 @@
-// Serviço simples para acessar a API da NASA - Para trabalho escolar
+// Serviço simples para acessar a API da NASA
 const NASA_API_KEY = '8iF0jRSN54cnJRx5i8hHcfVZwRhJySTF5dcihq7v';
 
 class NasaService {
@@ -20,7 +20,7 @@ class NasaService {
     }
   }
 
-  // Busca fotos de Marte (limitado para simplicidade)
+  // Busca fotos de Marte
   async getFotosDeMarte() {
     try {
       const response = await fetch(

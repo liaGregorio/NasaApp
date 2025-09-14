@@ -27,10 +27,6 @@ const FotoDoDiaScreen = () => {
     try {
       setLoading(true);
       const data = await NasaService.getFotoAstronomicaDoDia();
-      console.log('Dados da APOD:', data); // Para debug
-      console.log('Media type:', data.media_type); // Debug específico do tipo
-      console.log('URL:', data.url); // Debug da URL
-      console.log('HD URL:', data.hdurl); // Debug da HD URL
       setFotoData(data);
     } catch (error) {
       console.error('Erro ao carregar foto:', error);
